@@ -42,12 +42,12 @@ epsdk install App-DailyQuoteReminder
 
 - **OneBot 平台**：安装以下模块以支持 OneBot：
   ```bash
-  epsdk install OneBotAdapter OneBotMessageHandler
+  epsdk install OneBotAdapter OneBotMessageHandler RemindCore
   ```
 
 - **Yunhu 平台**：安装以下模块以支持 Yunhu：
   ```bash
-  epsdk install YunhuNormalHandler YunhuCommandHandler YunhuBotFollowed YunhuMessageSender
+  epsdk install YunhuNormalHandler YunhuCommandHandler YunhuBotFollowed YunhuMessageSender RemindCore
   ```
 
 ---
@@ -79,12 +79,6 @@ sdk.env.set('YunhuAdapter', {
     },
     "token": ""
 })
-
-sdk.env.set("DailyQuoteReminderConfig", {
-    "SubmitCommandId": "1432",   # /提交语录 的指令 ID
-    "ListCommandId": "1433",     # /查看所有语录 的指令 ID
-    "GetCommandId": "1435"       # /获取语录 的指令 ID
-})
 ```
 
 ### OneBot 平台配置示例
@@ -106,8 +100,6 @@ sdk.env.set("OneBotAdapter", {
     }
 })
 ```
-
-> 注意：OneBot 平台不需要设置指令 ID，只有 Yunhu 平台才需要配置这些指令 ID。
 
 ---
 
