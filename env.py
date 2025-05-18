@@ -10,12 +10,6 @@ sdk.env.set('YunhuAdapter',{
     "token": ""
 })
 
-sdk.env.set("DailyQuoteReminderConfig", {
-    "SubmitCommandId": "1432",   # /提交语录 的指令 ID
-    "ListCommandId": "1433",     # /查看所有语录 的指令 ID
-    "GetCommandId": "1435"       # /获取语录 的指令 ID
-})
-
 sdk.env.set("OneBotAdapter", {
     "mode": "connect",  # 可选 connect 或 server
     "WSServer": {
